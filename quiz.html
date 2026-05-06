@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chrome Hearts — Quiz</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body class="theme-chrome">
+  <header class="site-header">
+    <div class="brand">
+      <img src="chrome logo.jpg" alt="Chrome Hearts logo" class="logo">
+      <h1>Chrome Hearts</h1>
+    </div>
+    <button class="nav-toggle" aria-controls="main-nav-7"><span class="hamburger"></span></button>
+    <nav id="main-nav-7" class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="concepts.html">Key Concepts</a></li>
+        <li><a href="history and style.html">History & Style</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="quiz.html" class="active">Quiz</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Quick Quiz — Chrome Hearts</h2>
+    <form id="quiz-form" class="quiz-form" novalidate>
+      <!-- Use fieldsets for grouping and accessibility -->
+      <fieldset>
+        <legend>1) Which motif is commonly used in Chrome Hearts designs?</legend>
+        <label><input type="radio" name="q1" value="a"> Fleur-de-lis</label>
+        <label><input type="radio" name="q1" value="b"> Polka dots</label>
+        <label><input type="radio" name="q1" value="c"> Stripes</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>2) Chrome Hearts is best described as:</legend>
+        <label><input type="radio" name="q2" value="a"> Fast fashion</label>
+        <label><input type="radio" name="q2" value="b"> Luxury artisan brand</label>
+        <label><input type="radio" name="q2" value="c"> Sportswear label</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>3) Select the accurate statement (multiple answers allowed)</legend>
+        <label><input type="checkbox" name="q3" value="a"> Often uses silver</label>
+        <label><input type="checkbox" name="q3" value="b"> Prioritizes mass production</label>
+        <label><input type="checkbox" name="q3" value="c"> Emphasizes craftsmanship</label>
+      </fieldset>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Submit Answers</button>
+        <button type="button" id="clear-quiz" class="btn btn-secondary">Clear</button>
+      </div>
+
+      <div id="quiz-result" aria-live="polite" class="quiz-result"></div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>Quiz is for learning — no grades recorded.</p>
+  </footer>
+</body>
+</html>
